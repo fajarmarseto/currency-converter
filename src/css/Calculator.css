@@ -1,0 +1,88 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.apps {
+    margin-top: 30px;
+}
+
+.tittle-calculator {
+    margin: 20px;
+}
+
+.name-calculator {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.date-calculator {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.calculator-body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.calculator-form hr {
+    background-color: #A39694;
+}
+
+.base-name {
+    font-size: 38px;
+}
+
+.form-to {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.right-calculator {
+    margin-top: 10px;
+}
+
+.curr-target {
+    margin-top: 10px;
+}
+
+.button-form {
+    text-align: center;
+}
+
+.button-target {
+    text-align: right;
+}
+
+.button-click {
+    line-height: 65px;
+  height: 65px;
+}
+
+.target-count-rate {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.target-count-rate-code {
+    text-align: left;
+}
+
+.target-count-rate-count {
+    text-align: right;
+}
+
+.target-code-name {
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.target-rate {
+    text-align: left;
+    font-size: 12px;
+}
