@@ -1,5 +1,5 @@
 body {
-    background-color: #f2f2f2;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
 }
 
 .input-count {
@@ -50,6 +50,10 @@ body {
     margin-top: 10px;
 }
 
+.label-usd {
+    font-size: 10px;
+}
+
 .curr-target {
     margin-top: 10px;
 }
@@ -64,7 +68,7 @@ body {
 
 .button-click {
     line-height: 65px;
-  height: 65px;
+    height: 65px;
 }
 
 .target-count-rate {
@@ -93,5 +97,5 @@ body {
 
 .card-target-currency {
     font-weight: 500;
-    background-color: #BCF5FF;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }

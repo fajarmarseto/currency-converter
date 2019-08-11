@@ -11,11 +11,11 @@ import React from 'react';
 class CurrencySelect extends React.Component {
     /*
         initialize state
-        @state currencies save data for dropdown menu
+        @state currenciesDropdown save data for dropdown menu
         @state currencySelected is a state stores the temporary currency that is selected for removal from the dropdown
     */
     state = { 
-        currencies: ["USD", "CAD", "IDR", "GBP", "CHF", "SGD", "INR", "MYR", "JPY", "KRW"],
+        currenciesDropdown: ["USD", "CAD", "IDR", "GBP", "CHF", "SGD", "INR", "MYR", "JPY", "KRW"],
         currencySelected: ""
     };
 
@@ -28,8 +28,8 @@ class CurrencySelect extends React.Component {
 
     handleSubmit = (e) => {
         //remove the selected currency from the dropdown menu
-        var index = this.state.currencies.indexOf(this.state.currencySelected);
-        delete this.state.currencies[index];
+        var index = this.state.currenciesDropdown.indexOf(this.state.currencySelected);
+        delete this.state.currenciesDropdown[index];
 
         e.preventDefault();
 
@@ -43,8 +43,8 @@ class CurrencySelect extends React.Component {
                 <div className="ui grid">
                     <div className="eleven wide column">
                         <select className="ui fluid dropdown" onChange={this.handleChange} value={this.state.value}>
-                            <option value="">Add more currencies</option>
-                            {this.state.currencies.map(currencySelected => (
+                            <option value="">Choose more currencies</option>
+                            {this.state.currenciesDropdown.map(currencySelected => (
                                 <option key={currencySelected} value={currencySelected}>
                                     {currencySelected}
                                 </option>
@@ -52,7 +52,7 @@ class CurrencySelect extends React.Component {
                         </select>
                     </div>
                     <div className="four wide column button-form">
-                        <button className="ui primary button">ADD</button>
+                        <button className="ui primary basic button">ADD</button>
                     </div>
                 </div>
             </form>

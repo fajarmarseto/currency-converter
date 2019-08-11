@@ -24,7 +24,7 @@ const CurrencyTarget = ({currencies, count, deleteCurrency}) => {
                             <div className="target-rate">1 USD = {currency.code} <NumberFormat value={currency.rate} displayType={'text'} thousandSeparator={true} decimalScale="4"></NumberFormat></div>
                         </div>
                         <div className="four wide column button-target">
-                            <button className="ui red button button-click" onClick={() => {deleteCurrency(currency.id)}}>X</button>
+                            <button className="ui negative basic button button-click" onClick={() => {deleteCurrency(currency.id)}}>X</button>
                         </div>
                     </div>
                 </div>
