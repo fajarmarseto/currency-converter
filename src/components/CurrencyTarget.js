@@ -17,11 +17,19 @@ const CurrencyTarget = ({currencies, count, deleteCurrency}) => {
                     <div className="ui grid card-target-currency">
                         <div className="twelve wide column">
                             <div className="ui grid target-count-rate">
-                                <div className="four wide column target-count-rate-code">{currency.code}</div>
-                                <div className="twelve wide column target-count-rate-count"><NumberFormat value={currency.rate * count} displayType={'text'} thousandSeparator={true} decimalScale="4" /></div>
+                                <div className="four wide column target-count-rate-code">
+                                    {currency.code}
+                                </div>
+                                <div className="twelve wide column target-count-rate-count">
+                                    <NumberFormat value={currency.rate * count} displayType={'text'} thousandSeparator={true} decimalScale="4" />
+                                </div>
                             </div>
-                            <div className="target-code-name">{currency.code} - <i className={`${currency.flag} flag`}></i>{currency.name}</div>
-                            <div className="target-rate">1 USD = {currency.code} <NumberFormat value={currency.rate} displayType={'text'} thousandSeparator={true} decimalScale="4"></NumberFormat></div>
+                            <div className="target-code-name">
+                                {currency.code} - <i className={`${currency.flag} flag`}></i>{currency.name}
+                            </div>
+                            <div className="target-rate">
+                                1 USD = {currency.code} <NumberFormat value={currency.rate} displayType={'text'} thousandSeparator={true} decimalScale="4"></NumberFormat>
+                            </div>
                         </div>
                         <div className="four wide column button-target">
                             <button className="ui negative basic button button-click" onClick={() => {deleteCurrency(currency.id)}}>X</button>

@@ -16,6 +16,7 @@ class Calculator extends React.Component {
         @state currencies save data that is not provided by api
         @state currencyListCardis a state that will store currency data for display
     */
+
     state = { 
         initialAmount: '10.00',
         currencies: [ 
@@ -72,6 +73,7 @@ class Calculator extends React.Component {
     }
 
     render() {
+        const { currencies } = this.state.currencies
         return (
         <div className="ui segment form calculator-form">
             <div className="tittle-calculator">
@@ -85,7 +87,7 @@ class Calculator extends React.Component {
                         <div className="right-calculator">
                             <div className="ui grid">
                                 <div className="three wide column">
-                                    <button className="ui disabled button label-usd">USD$</button>
+                                    <button className="ui disabled button">$</button>
                                 </div>
                                 <div className="thirteen wide column">
                                     <input className="fluid input-count" type="number" value={(this.state.initialAmount)} onChange={(e) => this.setState({ initialAmount: e.target.value })} min="0" step="0.01"></input>
